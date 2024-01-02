@@ -3,8 +3,7 @@
     <Topbar />
     <ion-content :fullscreen="true">
       <div id="container">
-        <strong class="capitalize">{{ $route.params.id }}</strong>
-        <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+        <BigWeatherCard />
       </div>
     </ion-content>
   </ion-page>
@@ -13,7 +12,7 @@
 <script setup lang="ts">
 import { IonContent, IonPage } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import { Topbar } from '../components';
+import { Topbar, BigWeatherCard } from '../components';
 
 defineComponent({
   components: { Topbar, IonContent, IonPage },
